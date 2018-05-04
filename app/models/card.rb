@@ -1,6 +1,6 @@
 require 'digest/bubblebabble'
 
-class Image < ApplicationRecord
+class Card < ApplicationRecord
   before_create :generate_token
   has_one_attached :headshot
 

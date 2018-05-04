@@ -3,18 +3,18 @@ class CardsController < ApplicationController
 
   # POST /cards
   def create
-    @image = Image.new(card_params)
+    @card = Card.new(card_params)
 
-    if @image.save
-      render json: { url: card_url(@image, format: :svg) }
+    if @card.save
+      render json: { url: card_url(@card, format: :svg) }
     else
-      render json: { error: 'Image creation failed.', status: 400 }, status: :bad_request
+      render json: { error: 'Card creation failed.', status: 400 }, status: :bad_request
     end
   end
 
   # GET /card/Z7j0940LYUrV6SRcWyra6g
   def show
-    @image = Image.find_by!(key: params[:id])
+    @card = Card.find_by!(key: params[:id])
 
     respond_to do |format|
       format.svg {  render content_type: 'image/svg+xml' }
