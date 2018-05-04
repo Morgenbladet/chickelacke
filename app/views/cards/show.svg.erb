@@ -33,7 +33,7 @@
       <stop
          id="stop4520"
          offset="1"
-         style="stop-color:#e63323;stop-opacity:1" />
+         style="stop-color:<%= @card.sane_color %>;stop-opacity:1" />
     </linearGradient>
   </defs>
   <metadata
@@ -179,8 +179,8 @@
 
   <g id="user-layer">
     <text text-anchor="end" x="78" y="20">
-      <% @card.text_lines.each.with_index do |line, index| %>
-        <tspan x="78" y="<%=20 + (index*3.2) %>"><%= line.chomp %></tspan>
+      <% @card.text_lines.map{|x| split_into_lines(x)}.flatten.each.with_index do |line, index| %>
+        <tspan x="78" y="<%=20 + (index*3.2) %>"><%= line %></tspan>
       <% end %>
     </text>
   </g>

@@ -6,6 +6,11 @@ class Card < ApplicationRecord
 
   validate :headshot_validation
 
+  validates :color, format: {
+    with: /^#[0-9A-Fa-f]{6}$/,
+    message: 'must be a hex color, six digits, with #'
+  }
+
   def to_param
     key
   end
@@ -15,7 +20,15 @@ class Card < ApplicationRecord
   end
 
   def text_lines
-    [ name ] * 3
+    [ name, address, phone, slogan, member_of ]
+  end
+
+  def sane_color
+    if color.blank?
+      "#e63332"
+    else
+      color
+    end
   end
 
   private
