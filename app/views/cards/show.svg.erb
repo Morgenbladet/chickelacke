@@ -11,6 +11,7 @@
    width="800px"
    height="470px"
    viewBox="0 0 80 47"
+   preserveAspectRatio="xMidYMid"
    version="1.1"
    id="svg4518">
   <title
@@ -55,25 +56,32 @@
        height="47"
        x="0"
        y="0" />
-    <rect
-       transform="rotate(-15)"
-       y="14"
-       x="1"
-       height="30"
-       width="24"
-       id="shadow"
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="headshot"
-       width="24"
-       height="30"
-       x="0"
-       y="13"
-       transform="rotate(-15)" />
-    <% if @card.headshot.attached? %>
-      <image width="23.6" height="29.6" x="1.2" y="13.2" xlink:href="<%= @card.headshot_dataurl %>" transform="rotate(-15)" />
-    <% end %>
+    <g id="headshot-box" transform="rotate(-15)">
+      <rect
+        y="14"
+        x="1"
+        height="30"
+        width="24"
+        id="shadow"
+        style="opacity:1;fill:#000000;" />
+      <rect
+         style="opacity:1;fill:#f0edec;"
+         id="headshot-background"
+         width="24"
+         height="30"
+         x="0"
+         y="13" />
+      <% if @card.headshot.attached? %>
+        <image id="headshot" width="24" height="30" x="0" y="13" xlink:href="<%= url_for @card.cropped %>"/>
+      <% end %>
+      <rect
+        fill-opacity="0" stroke="black" stroke-opacity="1" stroke-width="0.5"
+        id="headshot-frame"
+        width="24"
+        height="30"
+        x="0"
+        y="13" />
+    </g>
     <g
        aria-label="MORGENBLADETRUSSEN 2018"
        transform="translate(-68.321776,-80.803809)"

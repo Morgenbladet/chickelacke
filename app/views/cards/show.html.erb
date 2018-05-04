@@ -3,4 +3,11 @@
 <p><%= @card.key  %></p>
 <p><%= @card.name %></p>
 
+<hr>
+
+<%= image_tag @card.cropped %>
+<p><%= url_for @card.cropped %></p>
+
+<hr>
+
 <img src="<%= card_url(@card, format: :svg) %>">

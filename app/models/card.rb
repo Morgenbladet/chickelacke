@@ -10,12 +10,8 @@ class Card < ApplicationRecord
     key
   end
 
-  def cropped_headshot
-    headshot.variant(resize: "80x47").processed
-  end
-
-  def headshot_dataurl
-    "data:%s;base64,%s" % [headshot.content_type, Base64.encode64(cropped_headshot.blob.download) ]
+  def cropped
+    headshot.variant(resize: "216x270^", gravity: 'center', crop: '216x270+0+0')
   end
 
   def text_lines
