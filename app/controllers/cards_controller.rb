@@ -1,4 +1,7 @@
 class CardsController < ApplicationController
+  skip_forgery_protection
+
+  # POST /cards
   def create
     @image = Image.new(card_params)
 
@@ -9,6 +12,7 @@ class CardsController < ApplicationController
     end
   end
 
+  # GET /card/Z7j0940LYUrV6SRcWyra6g
   def show
     @image = Image.find_by!(key: params[:id])
 
