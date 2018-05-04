@@ -20,13 +20,9 @@
     <radialGradient
        xlink:href="#linearGradient4514"
        id="radialGradient4516"
-       cx="78.494156"
-       cy="115.35892"
-       fx="78.494156"
-       fy="115.35892"
-       r="39.779415"
-       gradientTransform="matrix(0.4159478,0.00324815,-0.00321405,0.41158564,75.822487,56.497106)"
-       gradientUnits="userSpaceOnUse" />
+       cx="0.6"
+       cy="0.4"
+       r="0.2" />
     <linearGradient
        id="linearGradient4514">
       <stop
@@ -51,34 +47,36 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     id="layer1"
-     transform="translate(-68.321776,-80.803809)">
+  <g id="layer1">
     <rect
-       style="opacity:1;fill:url(#radialGradient4516);fill-opacity:1;stroke:#000000;stroke-width:0.20569073;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:url(#radialGradient4516);fill-opacity:1;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4485"
-       width="79.353142"
-       height="46.65097"
-       x="68.424622"
-       y="80.906654" />
+       width="80"
+       height="47"
+       x="0"
+       y="0" />
     <rect
-       transform="matrix(0.9800786,-0.19861003,0.24131471,0.97044691,0,0)"
-       y="109.67528"
-       x="47.407257"
-       height="30.32478"
-       width="24.913271"
-       id="rect4529"
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.40139407;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       transform="rotate(-15)"
+       y="14"
+       x="1"
+       height="30"
+       width="24"
+       id="shadow"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.40139407;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4527"
-       width="24.913271"
-       height="30.32478"
-       x="45.734631"
-       y="107.69711"
-       transform="matrix(0.9800786,-0.19861003,0.24131471,0.97044691,0,0)" />
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="headshot"
+       width="24"
+       height="30"
+       x="0"
+       y="13"
+       transform="rotate(-15)" />
+    <% if @image.headshot.attached? %>
+      <image width="23.6" height="29.6" x="1.2" y="13.2" xlink:href="<%= @image.headshot_dataurl %>" transform="rotate(-15)" />
+    <% end %>
     <g
        aria-label="MORGENBLADETRUSSEN 2018"
+       transform="translate(-68.321776,-80.803809)"
        id="text4533">
       <path
          d="m 72.652616,85.688347 0.745772,-2.449689 h 0.01976 v 2.449689 h 0.6223 v -3.1115 h -0.953205 l -0.646995,2.262011 h -0.01482 L 71.74386,82.576847 h -0.972961 v 3.1115 h 0.572911 v -2.449689 h 0.01976 l 0.760588,2.449689 z"
@@ -172,8 +170,18 @@
   </g>
 
   <g id="user-layer">
-    <text text-anchor="end" x="75" y="20" font-family="Verdana" font-size="3" font-weight="bold"><%= @image.name %></text>
+    <text text-anchor="end" x="78" y="20">
+      <% @image.text_lines.each.with_index do |line, index| %>
+        <tspan x="78" y="<%=20 + (index*3.2) %>"><%= line.chomp %></tspan>
+      <% end %>
+    </text>
   </g>
 
+  <style>
+    #user-layer {
+      font-family: 'Founders Grotesk Condensed', Verdana, sans-serif;
+      font-size: 3px;
+    }
+  </style>
 </svg>
 
