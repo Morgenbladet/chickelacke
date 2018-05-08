@@ -7,7 +7,7 @@ class Card < ApplicationRecord
   validate :headshot_validation
 
   validates :color, format: {
-    with: /^#[0-9A-Fa-f]{6}$/,
+    with: /\A#[0-9A-Fa-f]{6}\Z/,
     message: 'must be a hex color, six digits, with #'
   }
 
