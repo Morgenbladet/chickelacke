@@ -5,9 +5,9 @@
 
 <hr>
 
-<%= image_tag @card.cropped %>
-<p><%= url_for @card.cropped %></p>
+<%= image_tag @card.cropped, protocol: :https %>
+<p><%= url_for @card.cropped, protocol: :https %></p>
 
 <hr>
 
-<img src="<%= card_url(@card, format: :svg) %>">
+<img src="<%= card_url(@card, format: :svg, protocol: :https) %>">
