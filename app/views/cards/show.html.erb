@@ -5,8 +5,4 @@
 
 <hr>
 
-<%= image_tag url_for(@card.cropped) if @card.headshot.attached? %>
-
-<hr>
-
 <img src="<%= card_url(@card, format: :svg) %>">

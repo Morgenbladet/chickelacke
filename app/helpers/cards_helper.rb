@@ -1,6 +1,6 @@
 module CardsHelper
   def split_into_lines(string)
-    max_length=35
+    max_length=45
     return if string.nil?
     results = []
     remaining = string
@@ -16,18 +16,5 @@ module CardsHelper
       break if remaining.blank?
     end
     results
-  end
-
-  def inline_image(card, url)
-    "data:%s;base64,%s" % [ card.headshot.content_type, base64(url) ]
-  end
-
-  def base64(url)
-    require 'open-uri'
-    Base64.encode64(open(url).read)
-  end
-
-  def inline_headshot(card)
-    inline_image(card, rails_representation_url(card.cropped))
   end
 end

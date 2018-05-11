@@ -23,8 +23,23 @@ class Card < ApplicationRecord
     headshot.variant(resize: "216x270^", gravity: 'center', crop: '216x270+0+0')
   end
 
+  def fullname
+    if name.blank?
+      escaped_nickname
+    elsif name.rindex(' ')
+      space = name.rindex(' ')
+      "%s%s%s" % [ name[0..space], escaped_nickname, name[space..-1] ]
+    else
+      "%s %s" % [name, escaped_nickname]
+    end
+  end
+
+  def escaped_nickname
+    "«%s»" % [ nickname ]
+  end
+
   def text_lines
-    [ "<b>#{name}</b>", "Adr.: #{address}", "Tlf: #{phone}", slogan, "Medlem av: #{member_of}" ]
+    [ "Adr.: #{address}", "Tlf: #{phone}", nil, slogan, nil, "Medl.: #{member_of}" ]
   end
 
   def sane_color
@@ -33,6 +48,11 @@ class Card < ApplicationRecord
     else
       color
     end
+  end
+
+  def regenerate
+    self.nickname = self.phone = self.address = self.slogan = self.member_of = nil
+    generate_fields
   end
 
   protected
@@ -71,5 +91,6 @@ class Card < ApplicationRecord
     self.member_of = generate("member_of") if self.member_of.blank?
     self.slogan = generate("joke") if self.slogan.blank?
     self.address = generate("address") if self.address.blank?
+    self.nickname = generate("name")
   end
 end
