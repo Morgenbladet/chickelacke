@@ -1,0 +1,247 @@
+phone:
+  - Svarer aldri uansett
+  - Er ikke så god med tall
+  - "404"
+  - "1337"
+  - Bruker bare Snap
+  - Gir ikke nummeret til drittunger
+  - Hvilken?
+  - Ja, hva med det?
+  - Vet ikke, pappa har betalt den
+  - Da MÅ jeg ringe pappa, som MÅ ringe advokaten vår, som MÅ ringe deg
+  - Sorry, ass, jeg har så mange stalkere fra før
+  - Hvorfor? Virru kline?
+  - Bytter nummer mot en drink
+  - Ringer deg hvis jeg vil hooke
+  - I samme lomma som snusen
+  - Bare å spørre ;)
+  - Bytter mot noen frekke bilder ^_^
+  - Druknet den i dass
+  - På bunnen av et ølglass
+  - Jeg er ikke bare et tall, jeg er også en alder
+  - Telefon er noe alle har. Plis se meg som meg
+  - Telefonen er et borgerlig konsept
+  - Har ikke dekning
+  - Iphone
+  - Hvis vi er ment to be, så gjetter du det
+  - Det var ikke Bell som egentlig fant den opp
+  - Jeg tar mangelen på anrop som et uttrykk for stum beundring
+address:
+  - Spørs hvem jeg kliner med
+  - Hjeme hos deg, kanskje? Jeg er åpen
+  - Playboy mansion
+  - Uten hjemmet ville jeg aldri greid å være så mye hjemmefra
+  - Kommer an på promillen
+  - Ved siden av veien et sted
+  - Ved siden av naboen
+  - Skal du stalke meg?
+  - Sorry, ass. Har nok stalkere allerede
+  - Morra di
+  - Din eller min?
+  - Kaffebrenneriet
+  - Stortinget
+  - Slottet
+  - Du finner meg i det hvite hus
+  - Langt unna deg
+  - Adresse er et kapitalistisk prosjekt
+  - Der der er hjerterom
+  - Hos kjæresten
+  - Hjem er der hjertet er
+  - Den som har et hjem, har alltid noe å lengte bort fra
+  - In your face
+  - Avicii <3 <3 <3
+  - Paradise B&B
+member_of:
+  - AKP-ml
+  - FAFO
+  - SWAG
+  - Kristenrussen
+  - Pappa betaler
+  - NAV
+  - XDD
+  - EMC2
+  - MPEFC (Miss Piggy's elleville fan club)
+  - SSS
+  - RIF
+  - KANYE'S
+  - KYGO
+  - Kermitanerene
+  - CLUB 69
+  - KNUT
+  - Fellesskapet
+name:
+  - "{name_prefix}{name_suffix}"
+name_prefix:
+  - Snøfte
+  - Grise
+  - Rulle
+  - Kose
+  - Tafse
+  - Brille
+  - Puse
+  - Drage
+  - Lykke
+  - Snylte
+  - Grafse
+  - Rumpe
+  - Naken
+  - Puppe
+  - Drita
+  - Rote
+  - Drikke
+  - Gnukke
+  - Glufse
+name_suffix:
+  - ladden
+  - klumpen
+  - hølet
+  - duppen
+  - tuppen
+  - nesa
+  - fisen
+  - strålen
+  - trollet
+  - pusen
+  - mesteren
+  - slufsa
+  - krølla
+  - skinnet
+  - trynet
+  - glufsa
+  - sugeren
+  - fanten
+  - jukkeren
+joke:
+  - "{joke_complete}"
+  - "{joke_whenx}"
+  - "{joke_betterthan}"
+joke_complete:
+  - Her ville jeg skrive en kjemivits, men jeg er redd for å ikke få noen reaksjon.
+  - Bedre å være drita full enn en hval full av plast.
+  - Bedre å fylle parafin enn å pare fyllesvin.
+  - Alle barna lekte gjemsel i snøen, unntatt Greger, han var moralfilosof.
+  - Hvorfor kan man ikke derivere en humanist? Hun har ingen funksjon.
+  - Hvorfor kan ikke jeg føkke når Focault?
+  - Hvorfor kan ikke jeg harke når Morten hadde kikhoste?
+  - Hvorfor kan ikke jeg være laus når Deleuze?
+  - Heller fryd og Gamenn enn fryd og Gadamer.
+  - Hvorfor kan ikke jeg røyke hasj når bestefar digget Pol Pot?
+  - "Hvorfor kan ikke jeg ha 69 i skogen når studentopprøret i 68 egentlig var et nøye planlagt og regissert gateteater uten støtte i den reelle arbeiderklassen?"
+  - Habermas, mas, mas over hele linja
+  - Hvorfor kan ikke jeg gi bort slaver når Ernst Gadamer?
+  - Hvorfor skal ikke jeg skreve når Nytt norsk tidsskrift?
+  - Det er bedre å ha elg i skogen enn å ha hjort i buksa.
+  - Hvorfor kan ikke jeg snakke om pikk, når NTNU Gjøvik?
+  - Det er bedre å være rik og frisk enn å være fattig og uten dialog.
+  - Hvorfor kan ikke jeg kalle spader for lyspærer, når Sylvi kaller forbrytere for monstre?
+  - Alle barna delte på godisen, unntatt Nietzsche, for han oppløste all objektiv gruppemoral og ledet samfunnet i retning av total nytelsesnihilisme og ekstrem voldsforherligelse.
+  - Alle disse dagene som kom og gikk, ikke visste jeg at det var feil å sende sjikanerende meldinger til Liv Signe Navarsete.
+  - Hvorfor kan ikke jeg få mensen, når transcendensen i immanensen?
+  - "Det er bedre med en dram i timen enn et liv med type 2 herpes."
+  - Hvorfor kan ikke du fikses når jeg kan herpes?
+  - Det er bedre med tensing på Sunnmøre enn Sykes-Picot i Midtøsten
+  - Når du klør på tissen, er det på tide å konsultere Kvinneguiden
+  - Hvorfor kan ikke jeg sengetvedte når Terje Tvedt?
+joke_whenx:
+  - "Når {whenx_event}, er det på tide å {whenx_verb} {whenx_noun}"
+whenx_event:
+  - blodet bruser
+  - transcendensen kommer
+  - du begynner å resitere Descartes
+  - du drikker for mye
+  - du styrter tre øl
+  - du ligger på rygg
+  - du blander øl og vin
+  - du sitter på taket av bussen
+  - du ikke har skiftet bukse på tre uker
+  - skaresnøen holder en voksen mann i mai
+  - du må ty til Nabobil for å komme deg til Tryvann
+  - russedressen går av
+  - du skal på hyttetur med familien den andre helgen i mai
+  - ansiktet er fullt av tusj
+  - du ikke orker mer
+whenx_verb:
+  - tafse på
+  - oppsøke
+  - ringe til
+  - kline med
+  - pløye
+  - legge ned
+  - harve over
+  - minnes
+  - skifte
+  - avskilte
+  - endevende
+  - begå
+  - kontakte
+  - sleike
+  - tømme
+whenx_noun:
+  - rumpa si
+  - mamma
+  - barna
+  - Josef Fritzl
+  - Heidegger
+  - alle dem du har ligget med
+  - sudoku
+  - Åndenes makt
+  - buksa
+  - ryggen
+joke_betterthan:
+  - "Det er bedre med {btnumnoun} {btloc} enn {btnumnoun} {btloc}"
+btnumnoun:
+  - "en {btnoun_s}"
+  - "to {btnoun_p}"
+  - "fem {btnoun_p}"
+  - "ti {btnoun_p}"
+  - "tolv {btnoun_p}"
+  - "uendelig {btnoun_p}"
+  - "420 {btnoun_p}"
+btloc:
+  - på syre
+  - på fylla
+  - i hånden
+  - på dass
+  - på ryggen
+  - i bussen
+  - i russetida
+  - i fryseren
+  - i ræva
+  - på fylla
+  - i kjøleskapet
+  - hos mamma
+  - på taket
+  - i øret
+  - med kompisen
+btnoun_s:
+  - Gadamer
+  - Heidegger
+  - Foucault
+  - Sokrates
+  - pils
+  - øl
+  - mor
+  - russ
+  - Donald Trump
+  - moralfilosof
+  - økonom
+  - Sigrid Undset
+  - forhenværende Moser-ektepar
+  - Triana
+  - Sylvi
+btnoun_p:
+  - Gadamere
+  - Heideggere
+  - Foucaulter
+  - Sokrateser
+  - pils
+  - øl
+  - mødre
+  - russ
+  - Donald Trumper
+  - moralfilosofer
+  - økonomer
+  - Sigrid Undseter
+  - forhenværende Moser-ektepar
+  - Triana
+  - Sylvi
