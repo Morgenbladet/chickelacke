@@ -6,7 +6,14 @@ class CardsController < ApplicationController
     @card = Card.new(card_params)
 
     if @card.save
-      render json: { url: card_url(@card, format: :svg, protocol: :https) }
+      render json: {
+        card: card.to_json,
+        urls: {
+          png: card_url(@card, format: :png, protocol: :https),
+          html: card_url(@card, format: :html, protocol: :https),
+          svg: card_url(@card, format: :svg, protocol: :https)
+        }
+      }
     else
       render json: { error: 'Card creation failed.', status: 400 }, status: :bad_request
     end
