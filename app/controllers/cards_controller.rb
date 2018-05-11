@@ -18,6 +18,18 @@ class CardsController < ApplicationController
 
     respond_to do |format|
       format.svg {  render content_type: 'image/svg+xml' }
+      format.png do
+        imagedata = ApplicationController.render(template: 'cards/show', formats: [:svg], assigns: { card: @card })
+        self.instance_variable_set(:@_response_body, nil)
+        image = MiniMagick::Image.read(imagedata)
+        im = MiniMagick::Tool::Convert.new do |convert|
+          convert << image.path
+          convert.format("png")
+          convert.resize("600")
+          convert << "-"
+        end
+        render plain: im.to_blob, content_type: 'image/png'
+      end
       format.html
     end
   end

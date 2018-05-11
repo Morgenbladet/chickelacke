@@ -8,8 +8,8 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="800px"
-   height="470px"
+   width="800pt"
+   height="470pt"
    viewBox="0 0 80 47"
    preserveAspectRatio="xMidYMid"
    version="1.1"
@@ -71,10 +71,7 @@
          height="30"
          x="0"
          y="13" />
-      <% if @card.headshot.attached? %>
-        <image id="headshot" width="24" height="30" x="0" y="13" xlink:href="<%= inline_headshot(@card) %>"/>
-      <% else %>
-        <image id="headshot" width="24" height="30" x="0" y="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAF3CAIAAACQVuEWAAAACXBIWXMAAC4j
+      <image id="headshot" width="24" height="30" x="0" y="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAF3CAIAAACQVuEWAAAACXBIWXMAAC4j
 AAAuIwF4pT92AAAAB3RJTUUH4gULCRQ59sN8igAAIABJREFUeNrsvXe8pVlZ
 Lrjy+vJO55w6XV1VHaEzSpCogCRjw73XBmaGMYxpZAgG1IuOV5yL/lTCDxwQ
 EQcEwcw1YQQMJJt7FWiR1DQdK5+0v72/uPL88VZ91K1uUtNNddjvH/XbZ9c+
@@ -2545,7 +2542,6 @@ fWzxJiw2GWOsLGVZEj8aIRRFEcYEIRhFEeAwjhJZkWRFKfLcMPXn3vCyrMgy
 lSmlFCE4m8w555xxSaKqpmqauri8aJpGpVqZjKcQoYXFZpYVJSs5AFmaWbZV
 lKVh6KZtcM4wxoapJ3ECEYyjqL20gCCKwgRC6M39Sq1CCPlfVsXktUbTtv4A
 AAAASUVORK5CYII=" />
-      <% end %>
       <rect
         fill-opacity="0" stroke="black" stroke-opacity="1" stroke-width="0.5"
         id="headshot-frame"
@@ -2649,7 +2645,7 @@ AAAASUVORK5CYII=" />
     </g>
   </g>
 
-  <g id="user-layer">
+  <g id="user-layer" font-family="'Founders Grotesk', 'Helvetica Condensed', 'Arial Narrow', 'Arial', sans-serif" font-size="2.5">
     <text text-anchor="end" x="78" y="12" font-weight="bold"><%= @card.fullname %></text>
     <text text-anchor="end" x="78" y="15">
      <% delta_y = -1.6 %>
@@ -2659,12 +2655,5 @@ AAAASUVORK5CYII=" />
       <% end -%>
     </text>
   </g>
-
-  <style>
-    #user-layer {
-      font-family: 'Founders Grotesk Condensed', Verdana, sans-serif;
-      font-size: 3px;
-    }
-  </style>
 </svg>
 

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= @title %> | Morgenbladetrussen</title>
+    <style>
+      body { background-color: #f0edec; }
+      #main { text-align: center; max-width: 800px; background-color: #ffffff; padding: 1em; margin: 1em auto; border: 1px solid #e63332; box-shadow: 6px 6px black; }
+      #makeyourown {
+        display: block;
+        font-size: 20px;
+        margin: 1em 0;
+      }
+    </style>
+    <meta property="og:title" content="<%= @title %>">
+    <meta property="og:description" content="Morgenbladetrussen 2018. Generer en russevits!">
+    <% if @image_url %>
+      <meta property="og:image" content="<%= @image_url %>">
+    <% end %>
+  </head>
+  <body>
+    <div id="main">
+      <%= yield %>
+    </div>
+  </body>
+</html>
