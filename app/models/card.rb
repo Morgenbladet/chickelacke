@@ -24,7 +24,7 @@ class Card < ApplicationRecord
   end
 
   def text_lines
-    [ name, address, phone, slogan, member_of ]
+    [ "<b>#{name}</b>", "Adr.: #{address}", "Tlf: #{phone}", slogan, "Medlem av: #{member_of}" ]
   end
 
   def sane_color

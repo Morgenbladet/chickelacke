@@ -72,7 +72,7 @@
          x="0"
          y="13" />
       <% if @card.headshot.attached? %>
-        <image id="headshot" width="24" height="30" x="0" y="13" xlink:href="<%= url_for @card.cropped %>"/>
+        <image id="headshot" width="24" height="30" x="0" y="13" xlink:href="<%= inline_headshot(@card) %>"/>
       <% end %>
       <rect
         fill-opacity="0" stroke="black" stroke-opacity="1" stroke-width="0.5"

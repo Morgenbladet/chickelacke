@@ -5,8 +5,8 @@
 
 <hr>
 
-<%= image_tag @card.cropped, protocol: :https %>
+<%= image_tag url_for(@card.cropped) if @card.headshot.attached? %>
 
 <hr>
 
-<img src="<%= card_url(@card, format: :svg, protocol: :https) %>">
+<img src="<%= card_url(@card, format: :svg) %>">
