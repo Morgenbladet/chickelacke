@@ -64,11 +64,9 @@ class Card < ApplicationRecord
   private
 
   def replace_tokens(string)
-    logger.info string
     token_re = /{.*?}/
     string.gsub(token_re) do |tok|
       tok = tok.slice(1..-2)
-      logger.info "token #{tok}"
       chosen = GENERATOR_DATA[tok].sample
       replace_tokens(chosen)
     end
@@ -91,6 +89,6 @@ class Card < ApplicationRecord
     self.member_of = generate("member_of") if self.member_of.blank?
     self.slogan = generate("joke") if self.slogan.blank?
     self.address = generate("address") if self.address.blank?
-    self.nickname = generate("name")
+    self.nickname = generate("name") if self.nickname.blank?
   end
 end
