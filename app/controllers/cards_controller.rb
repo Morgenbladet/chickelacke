@@ -7,7 +7,7 @@ class CardsController < ApplicationController
 
     if @card.save
       render json: {
-        card: card.to_json,
+        card: @card.to_json,
         urls: {
           png: card_url(@card, format: :png, protocol: :https),
           html: card_url(@card, format: :html, protocol: :https),
