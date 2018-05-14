@@ -1,5 +1,5 @@
 <% @title = "Russekortet til %s" % [ @card.fullname ] %>
-<% @image_url = card_url(@card, format: :png) %>
+<% @image_url = card_url(@card, format: :png, protocol: :https) %>
 
 <h2><%= @title %></h2>
 
