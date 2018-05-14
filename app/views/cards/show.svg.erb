@@ -2645,13 +2645,13 @@ AAAASUVORK5CYII=" />
     </g>
   </g>
 
-  <g id="user-layer" font-family="'Founders Grotesk', 'Helvetica Condensed', 'Arial Narrow', 'Arial', sans-serif" font-size="2.5">
-    <text text-anchor="end" x="78" y="12" font-weight="bold"><%= @card.fullname %></text>
-    <text text-anchor="end" x="78" y="15">
+  <g id="user-layer" font-family="Founders Grotesk, Helvetica Condensed, Arial Narrow, Arial, sans-serif" font-size="2.5">
+    <text text-anchor="start" x="40" y="12" font-weight="bold"><%= @card.fullname %></text>
+    <text text-anchor="start" x="40" y="15">
      <% delta_y = -1.6 %>
       <% @card.text_lines.map{|x| split_into_lines(x)}.flatten.each.with_index do |line, index| -%>
         <% delta_y = delta_y + (line.blank? ? 1.6 : 3.2) %>
-        <tspan x="78" y="<%= 15 + delta_y %>"><%= line %></tspan>
+        <tspan x="40" y="<%= 15 + delta_y %>"><%= line %></tspan>
       <% end -%>
     </text>
   </g>
