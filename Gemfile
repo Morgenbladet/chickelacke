@@ -51,3 +51,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Image processing
 gem 'image_processing', '~> 1.2'
+
+gem 'dalli'
+gem 'actionpack-action_caching'

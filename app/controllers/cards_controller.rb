@@ -1,5 +1,6 @@
 class CardsController < ApplicationController
   skip_forgery_protection
+  caches_action :show
 
   # POST /cards
   def create
@@ -26,7 +27,7 @@ class CardsController < ApplicationController
     respond_to do |format|
       format.svg {  render content_type: 'image/svg+xml' }
       format.png do
-        imagedata = ApplicationController.render(template: 'cards/show', formats: [:svg], assigns: { card: @card })
+        imagedata = ApplicationController.render(template: 'cards/show', formats: [:svg], assigns: { card: @card }, cached: true)
         self.instance_variable_set(:@_response_body, nil)
         image = MiniMagick::Image.read(imagedata)
         im = MiniMagick::Tool::Convert.new do |convert|
