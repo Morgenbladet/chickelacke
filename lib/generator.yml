@@ -26,9 +26,11 @@ phone:
   - Hvis vi er ment to be, så gjetter du det
   - Det var ikke Bell som egentlig fant den opp
   - Jeg tar mangelen på anrop som et uttrykk for stum beundring
+  - Jajajajajaja. Hver dag.
+  - Sa brura.
 address:
   - Spørs hvem jeg kliner med
-  - Hjeme hos deg, kanskje? Jeg er åpen
+  - Hjemme hos deg, kanskje? Jeg er åpen
   - Playboy mansion
   - Uten hjemmet ville jeg aldri greid å være så mye hjemmefra
   - Kommer an på promillen
@@ -51,6 +53,13 @@ address:
   - In your face
   - Avicii <3 <3 <3
   - Paradise B&B
+  - Eit lite bu er betre enn inkje. Heime er kvar mann herre.
+  - Heime er kvar mann herre.
+  - Et hus er ikke et hjem før det har en Jordan Peterson.
+  - "96 Liquor St."
+  - Det bryr vel ikke deg?
+  - Der det er en seng
+  - Youtube er mitt hjem
 member_of:
   - AKP-ml
   - FAFO
@@ -69,6 +78,18 @@ member_of:
   - CLUB 69
   - KNUT
   - Fellesskapet
+  - XXX
+  - LOL
+  - KYGO FC
+  - ONA9
+  - Pappa betaler, men mamma bidrar også
+  - Kritikerlaget
+  - Pappa betaler (mamma bidrar også, bare på en annen måte)
+  - D-DAWGS
+  - Nasjonalbiblioteket
+  - VG+
+  - FACEBOOK
+  - INSTA
 name:
   - "{name_prefix}{name_suffix}"
 name_prefix:
@@ -113,8 +134,11 @@ name_suffix:
   - jukkeren
 joke:
   - "{joke_complete}"
+  - "{joke_generated}"
+joke_generated:
   - "{joke_whenx}"
   - "{joke_betterthan}"
+  - "{joke_all}"
 joke_complete:
   - Her ville jeg skrive en kjemivits, men jeg er redd for å ikke få noen reaksjon.
   - Bedre å være drita full enn en hval full av plast.
@@ -142,6 +166,17 @@ joke_complete:
   - Det er bedre med tensing på Sunnmøre enn Sykes-Picot i Midtøsten
   - Når du klør på tissen, er det på tide å konsultere Kvinneguiden
   - Hvorfor kan ikke jeg sengetvedte når Terje Tvedt?
+  - Blant likemenn er jeg en god nummer tre.
+  - Samme hva problemet er, så er ikke bekkenløsningen.
+  - Kvifor kan ikkje eg hoste røyk når Dionysos?
+  - Det er ironisk at kasuset som opptrer i dialekter fra Setesdalen og opp til Inntrøndelag kalles «dativ» når det har en klart lokativ funksjon.
+  - Hvorfor kan ikke jeg danse til The Fox når Hattie Hattie Hattie ho?
+  - Norsk lingvistisk terminologi er i hendene på diakronistene! Vi trenger.en synkronistisk-funksjonalistisk revolusjon.
+  - Hvorfor kan ikke jeg bite negler, når Ludwig van Beethoven?
+  - Hvorfor kan ikke jeg sitte, når kommuneansatt?
+  - Hvorfor kan ikke jeg være, når Twitter?
+  - Kvifor kan ikkje eg daue, når ambassadør?
+  - Hvorfor kan ikke jeg være tre år på etterskudd, når Alexander Rybak?
 joke_whenx:
   - "Når {whenx_event}, er det på tide å {whenx_verb} {whenx_noun}"
 whenx_event:
@@ -160,6 +195,7 @@ whenx_event:
   - du skal på hyttetur med familien den andre helgen i mai
   - ansiktet er fullt av tusj
   - du ikke orker mer
+  - du klør på tissen
 whenx_verb:
   - tafse på
   - oppsøke
@@ -176,6 +212,14 @@ whenx_verb:
   - kontakte
   - sleike
   - tømme
+  - smake på
+  - ha dance-off med
+  - kose med
+  - dra til
+  - ta en skål for
+  - konsultere
+  - prostituere
+  - pugge
 whenx_noun:
   - rumpa si
   - mamma
@@ -187,6 +231,22 @@ whenx_noun:
   - Åndenes makt
   - buksa
   - ryggen
+  - sitt eget kjønn
+  - din besteste bestevenn
+  - kebaben fra i går
+  - eksen din
+  - Kygo,
+  - bokhylla
+  - Kvinneguiden
+  - noe polsk
+  - noe fransk
+  - Ylvis
+  - barndomsvennen til pappa
+  - barndomsvennen til mamma
+  - Prøysen
+  - Kygo
+  - Camilla Collett
+  - Henrik Wergeland
 joke_betterthan:
   - "Det er bedre med {btnumnoun} {btloc} enn {btnumnoun} {btloc}"
 btnumnoun:
@@ -195,7 +255,7 @@ btnumnoun:
   - "fem {btnoun_p}"
   - "ti {btnoun_p}"
   - "tolv {btnoun_p}"
-  - "uendelig {btnoun_p}"
+  - "et uendelig antall {btnoun_p}"
   - "420 {btnoun_p}"
 btloc:
   - på syre
@@ -213,6 +273,8 @@ btloc:
   - på taket
   - i øret
   - med kompisen
+  - på knærne
+  - i russelua
 btnoun_s:
   - Gadamer
   - Heidegger
@@ -229,6 +291,7 @@ btnoun_s:
   - forhenværende Moser-ektepar
   - Triana
   - Sylvi
+  - ad hominem-argumenter
 btnoun_p:
   - Gadamere
   - Heideggere
@@ -245,3 +308,53 @@ btnoun_p:
   - forhenværende Moser-ektepar
   - Triana
   - Sylvi
+joke_all:
+  - "Alle {all_nouns_p} {all_verbs} {all_loc}, unntatt {all_nouns_s}"
+all_nouns_p:
+  - russene
+  - filosofene
+  - paradisedeltakerne
+  - humanistene
+  - bøkene
+  - nerdene
+  - barna
+  - nettrollene
+all_verbs:
+  - skeit
+  - sang
+  - hojet
+  - stekte
+  - provoserte
+  - demonstrerte
+  - filosoferte
+  - drømte
+  - klinte
+  - hooka
+  - spiste
+  - pisset
+all_loc:
+  - i lia
+  - på toget
+  - i timen
+  - på skolen
+  - i gymmen
+  - i stormen
+  - i flaska
+  - på fylla
+  - på pubben
+  - på dass
+  - på tur
+  - med mamma
+all_nouns_s:
+  - meg, jeg var lei
+  - russen, han var påkjørt av bussen
+  - Logan, han sovnet i skogen
+  - Børre, han spiste opp snørret
+  - Pål, han var bål
+  - kongen, han holdt på med bongen
+  - Deleuze, han spiste snus
+  - Anne, hun var panne
+  - Adolf, han spilte golf
+  - Olemic, han hadde for liten… kostnadsramme
+  - Erna, hun var fjerna
+  - den intellektuelle, hun var en snelle
