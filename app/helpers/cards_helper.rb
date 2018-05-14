@@ -1,6 +1,6 @@
 module CardsHelper
   def split_into_lines(string)
-    max_length=40
+    max_length=38
     return if string.nil?
     results = []
     remaining = string

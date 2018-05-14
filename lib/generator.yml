@@ -135,6 +135,8 @@ name_suffix:
 joke:
   - "{joke_complete}"
   - "{joke_generated}"
+  - "{joke_generated}"
+  - "{joke_generated}"
 joke_generated:
   - "{joke_whenx}"
   - "{joke_betterthan}"

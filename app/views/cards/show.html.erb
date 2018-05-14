@@ -1,9 +1,9 @@
 <% @title = "Russekortet til %s" % [ @card.fullname ] %>
-<% @image_url = card_url(@card, format: :png) %>
+<% @image_url = card_url(@card, format: :png, protocol: :https) %>
 
 <h2><%= @title %></h2>
 
 <a id="makeyourown" href="https://morgenbladet.no/russekort">Lag ditt eget!</a>
 
-<img style="max-width: 600px; width: 100%;" src="<%= card_url(@card, format: :svg) %>">
+<img style="max-width: 600px; width: 100%;" src="<%= card_url(@card, format: :svg, protocol: :https) %>">
 
