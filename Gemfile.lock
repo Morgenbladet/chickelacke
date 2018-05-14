@@ -18,6 +18,8 @@ GEM
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionpack-action_caching (1.2.0)
+      actionpack (>= 4.0.0, < 6)
     actionview (5.2.0)
       activesupport (= 5.2.0)
       builder (~> 3.1)
@@ -62,6 +64,7 @@ GEM
     byebug (10.0.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    dalli (2.7.8)
     erubi (1.7.1)
     ffi (1.9.23)
     globalid (0.4.1)
@@ -179,9 +182,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionpack-action_caching
   aws-sdk-s3
   bootsnap (>= 1.1.0)
   byebug
+  dalli
   image_processing (~> 1.2)
   listen (>= 3.0.5, < 3.2)
   mini_magick (~> 4.8)
